@@ -1,0 +1,168 @@
+
+
+            <div class="page-header card">
+            <div class="row align-items-end">
+            <div class="col-lg-8">
+            <div class="page-header-title">
+            <i class="feather icon-home bg-c-blue"></i>
+            <div class="d-inline">
+            <h5>Acceuil</h5>
+            <span></span>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-4">
+            <div class="page-header-breadcrumb">
+            <ul class=" breadcrumb breadcrumb-title">
+            <li class="breadcrumb-item">
+            <a href="index.html"><i class="feather icon-home"></i></a>
+            </li>
+            <li class="breadcrumb-item"><a href="#!">Dashboard</a> </li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="pcoded-inner-content">
+            <div class="main-body">
+            <div class="page-wrapper">
+            <div class="page-body">
+
+            <div class="row">
+
+            
+            <div class="col-md-8">
+            <div class="card table-card">
+            <div class="card-header">
+            <h5>05 deniers messages recus</h5>
+            <div class="card-header-right">
+            <ul class="list-unstyled card-option">
+            <li class="first-opt"><i class="feather icon-chevron-left open-card-option"></i></li>
+            <li><i class="feather icon-maximize full-card"></i></li>
+            <li><i class="feather icon-minus minimize-card"></i></li>
+            <li><i class="feather icon-refresh-cw reload-card"></i></li>
+            <li><i class="feather icon-trash close-card"></i></li>
+            <li><i class="feather icon-chevron-left open-card-option"></i></li>
+            </ul>
+            </div>
+            </div>
+            <div class="card-block p-b-0">
+            <div class="table-responsive">
+            <table class="table table-hover m-b-0">
+            <thead>
+            <tr>
+            <th>id</th>
+            <th>nom</th>
+            <th>email</th>
+            <th>tetephone</th>
+            <th>objet</th>
+            <th>operation</th>
+            </tr>
+            </thead>
+            <tbody>
+
+                      <?php// $message_data = $this->Message_Model->manage_message_info1();?>
+                              
+                            <?php// foreach ($message_data as $key => $message_contenu):?>
+                              
+                             <tr class="unread">
+                        <td>
+                        <?php// echo $message_contenu->id; ?>
+                        </td>
+                        <td><a href="email-read.html" class="email-name waves-effect"><?php //echo $message_contenu->expediteur; ?></a></td>
+                        <td><a href="email-read.html" class="email-name waves-effect"> <?php// echo $message_contenu->email; ?> </a></td>
+                        <td class="email-attch"><a href="#"><?php// echo $message_contenu->telephone; ?></a></td>
+                        <td class="email-time"><?php// echo $message_contenu->heure; ?></td>
+
+                      <td>
+                       
+                    <div class="btn-group dropdown-split-primary">
+                   <a href="<?php// echo base_url();?>read-message/<?php// echo $message_contenu->id; ?>" class="btn btn-success"> <i class="icofont icofont-ui-folder"> lire</i></a>
+                   
+                    
+                  </div> 
+                 
+
+                  </td>
+                    </tr>  
+                            <?php// endforeach;?>     
+                    </table>
+            </tbody>
+            </table>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-12 col-xl-4">
+            <div class="card comp-card">
+            <div class="card-body">
+            <div class="row align-items-center">
+            <div class="col">
+                  <?php// $all_data = $this->Slide_Model->all_message();?>
+            <h6 class="m-b-25">Total Slides</h6>
+            <h3 class="f-w-700 text-c-blue"><?php //echo $all_data?></h3>
+            
+            </div>
+            <div class="col-auto">
+            <i class="fas fa-eye bg-c-blue"></i>
+            </div>
+             </div>
+            </div>
+            </div>
+            <div class="card comp-card">
+            <div class="card-body">
+            <div class="row align-items-center">
+            <div class="col">
+                   <?php// $all_data = $this->Contenu_Model->all_message();?>
+            <h6 class="m-b-25">Total Produits enregistrés</h6>
+            <h3 class="f-w-700 text-c-green"><?php// echo $all_data?></h3>
+            </div>
+            <div class="col-auto">
+            <i class="fas fa-bullseye bg-c-green"></i>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="card comp-card">
+            <div class="card-body">
+            <div class="row align-items-center">
+            <div class="col">
+                  <?php// $all_data = $this->Category_Model->all_message();?>
+            <h6 class="m-b-25">Total prestations</h6>
+            <h3 class="f-w-700 text-c-yellow"><?php// echo $all_data?></h3>
+          
+            </div>
+            <div class="col-auto">
+            <i class="fas fa-hand-paper bg-c-yellow"></i>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="card comp-card">
+            <div class="card-body">
+            <div class="row align-items-center">
+            <div class="col">
+                  <?php// $all_data = $this->Message_Model->all_message();?>
+            <h6 class="m-b-25">Total Messages</h6>
+            <h3 class="f-w-700 text-c-yellow"><?php// echo $all_data?></h3>
+          
+            </div>
+            <div class="col-auto">
+            <i class="fas fa-hand-paper bg-c-yellow"></i>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            
+
+
+
+            </div>
+
+            </div>
+            </div>
+            </div>
+            </div>
